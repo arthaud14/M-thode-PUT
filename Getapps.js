@@ -53,7 +53,7 @@ app.get("/api/movies/:id", (req, res) => {
 });
 
 app.get("/api/users", (req, res) => {
-  let sql = "SELECT * FROM user";
+  let sql = "SELECT * FROM users";
   const sqlValues = [];
   if(req.query.language) {
     sql += "WHERE language = ?";
